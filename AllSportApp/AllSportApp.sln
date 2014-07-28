@@ -1,0 +1,171 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllSportApp", "AllSportApp", "{B74832C5-4911-4C8B-981C-B59C3139AC9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllSportApp", "AllSportApp\AllSportApp.csproj", "{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllSportApp.Repository", "AllSportApp.Repository", "{17BD1A96-D0AB-4C9F-9862-AA6FBD7C1C53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllSportApp.Domain", "AllSportApp.Domain", "{81D0C0B5-0F7B-4FD1-8F30-10676F2A2702}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllSportApp.Service", "AllSportApp.Service", "{9F4A0DA2-D1AA-4173-AE55-79745997B70F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllSportApp.Common", "AllSportApp.Common", "{008FFDD6-9E7C-4C29-8962-6AD26BEFC38F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AllSportApp.Util", "AllSportApp.Util", "{515AEF83-59A9-4818-87CD-35E2539E0896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllSportApp.Domain", "AllSportApp.Domain\AllSportApp.Domain.csproj", "{763D0765-F985-4AC1-B649-45277208BF94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllSportApp.Repository", "AllSportApp.Repository\AllSportApp.Repository.csproj", "{63272C40-4F25-4B67-8270-7B66A7B2E37C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllSportApp.Service", "AllSportApp.Service\AllSportApp.Service.csproj", "{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllSportApp.Util", "AllSportApp.Util\AllSportApp.Util.csproj", "{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A7464D8B-1BBD-41C1-99A0-55F0843F331C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllSportApp.TestConsole", "AllSportApp.TestConsole\AllSportApp.TestConsole.csproj", "{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllSportApp.WP.Domain", "AllSportApp.WP.Domain\AllSportApp.WP.Domain.csproj", "{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ecotfs:8080/tfs/production
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AllSportApp\\AllSportApp.csproj
+		SccProjectTopLevelParentUniqueName1 = AllSportApp.sln
+		SccProjectName1 = AllSportApp
+		SccLocalPath1 = AllSportApp
+		SccProjectUniqueName2 = AllSportApp.Domain\\AllSportApp.Domain.csproj
+		SccProjectTopLevelParentUniqueName2 = AllSportApp.sln
+		SccProjectName2 = AllSportApp.Domain
+		SccLocalPath2 = AllSportApp.Domain
+		SccProjectUniqueName3 = AllSportApp.Repository\\AllSportApp.Repository.csproj
+		SccProjectTopLevelParentUniqueName3 = AllSportApp.sln
+		SccProjectName3 = AllSportApp.Repository
+		SccLocalPath3 = AllSportApp.Repository
+		SccProjectUniqueName4 = AllSportApp.Service\\AllSportApp.Service.csproj
+		SccProjectTopLevelParentUniqueName4 = AllSportApp.sln
+		SccProjectName4 = AllSportApp.Service
+		SccLocalPath4 = AllSportApp.Service
+		SccProjectUniqueName5 = AllSportApp.Util\\AllSportApp.Util.csproj
+		SccProjectTopLevelParentUniqueName5 = AllSportApp.sln
+		SccProjectName5 = AllSportApp.Util
+		SccLocalPath5 = AllSportApp.Util
+		SccProjectUniqueName6 = AllSportApp.TestConsole\\AllSportApp.TestConsole.csproj
+		SccProjectTopLevelParentUniqueName6 = AllSportApp.sln
+		SccProjectName6 = AllSportApp.TestConsole
+		SccLocalPath6 = AllSportApp.TestConsole
+		SccProjectUniqueName7 = AllSportApp.WP.Domain\\AllSportApp.WP.Domain.csproj
+		SccProjectTopLevelParentUniqueName7 = AllSportApp.sln
+		SccProjectName7 = AllSportApp.WP.Domain
+		SccLocalPath7 = AllSportApp.WP.Domain
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|ARM.ActiveCfg = Debug|ARM
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|ARM.Build.0 = Debug|ARM
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|ARM.Deploy.0 = Debug|ARM
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|x86.ActiveCfg = Debug|x86
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|x86.Build.0 = Debug|x86
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Debug|x86.Deploy.0 = Debug|x86
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|ARM.ActiveCfg = Release|ARM
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|ARM.Build.0 = Release|ARM
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|ARM.Deploy.0 = Release|ARM
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|x86.ActiveCfg = Release|x86
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|x86.Build.0 = Release|x86
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1}.Release|x86.Deploy.0 = Release|x86
+		{763D0765-F985-4AC1-B649-45277208BF94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763D0765-F985-4AC1-B649-45277208BF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763D0765-F985-4AC1-B649-45277208BF94}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{763D0765-F985-4AC1-B649-45277208BF94}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{763D0765-F985-4AC1-B649-45277208BF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763D0765-F985-4AC1-B649-45277208BF94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{763D0765-F985-4AC1-B649-45277208BF94}.Release|ARM.ActiveCfg = Release|Any CPU
+		{763D0765-F985-4AC1-B649-45277208BF94}.Release|x86.ActiveCfg = Release|Any CPU
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C}.Release|x86.ActiveCfg = Release|Any CPU
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F}.Release|x86.ActiveCfg = Release|Any CPU
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426}.Release|x86.ActiveCfg = Release|Any CPU
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2}.Release|x86.ActiveCfg = Release|Any CPU
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Debug|ARM.Build.0 = Debug|ARM
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Debug|x86.ActiveCfg = Debug|x86
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Debug|x86.Build.0 = Debug|x86
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Release|ARM.ActiveCfg = Release|ARM
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Release|ARM.Build.0 = Release|ARM
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Release|x86.ActiveCfg = Release|x86
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73F98CD7-7164-4A4C-AD95-DB42CB1B7FC1} = {B74832C5-4911-4C8B-981C-B59C3139AC9F}
+		{17BD1A96-D0AB-4C9F-9862-AA6FBD7C1C53} = {B74832C5-4911-4C8B-981C-B59C3139AC9F}
+		{81D0C0B5-0F7B-4FD1-8F30-10676F2A2702} = {B74832C5-4911-4C8B-981C-B59C3139AC9F}
+		{9F4A0DA2-D1AA-4173-AE55-79745997B70F} = {B74832C5-4911-4C8B-981C-B59C3139AC9F}
+		{008FFDD6-9E7C-4C29-8962-6AD26BEFC38F} = {B74832C5-4911-4C8B-981C-B59C3139AC9F}
+		{515AEF83-59A9-4818-87CD-35E2539E0896} = {B74832C5-4911-4C8B-981C-B59C3139AC9F}
+		{63272C40-4F25-4B67-8270-7B66A7B2E37C} = {17BD1A96-D0AB-4C9F-9862-AA6FBD7C1C53}
+		{763D0765-F985-4AC1-B649-45277208BF94} = {81D0C0B5-0F7B-4FD1-8F30-10676F2A2702}
+		{6B7F30AC-4157-4B95-94DE-70B1E67AC77B} = {81D0C0B5-0F7B-4FD1-8F30-10676F2A2702}
+		{DF4EFD10-601B-4A77-99FF-86D6C076FA2F} = {9F4A0DA2-D1AA-4173-AE55-79745997B70F}
+		{9F91ED6B-3494-4C32-AA25-91CA9E6F4426} = {515AEF83-59A9-4818-87CD-35E2539E0896}
+		{541449B1-CB60-45D5-94B0-4C56C7B4A6E2} = {515AEF83-59A9-4818-87CD-35E2539E0896}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,117 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AllSportApp.EventPivot"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <phone:JumpListItemBackgroundConverter x:Key="BackgroundConverter"/>
+        <phone:JumpListItemForegroundConverter x:Key="ForegroundConverter"/>
+        <Style x:Key="AddrBookJumpListStyle" TargetType="phone:LongListSelector">
+            <Setter Property="GridCellSize"  Value="113,113"/>
+            <Setter Property="LayoutMode" Value="Grid" />
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Border Background="{Binding Converter={StaticResource BackgroundConverter}}" Width="113" Height="113" Margin="6" >
+                            <TextBlock Text="{Binding Key}" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="48" Padding="6" 
+               Foreground="{Binding Converter={StaticResource ForegroundConverter}}" VerticalAlignment="Center"/>
+                        </Border>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <DataTemplate x:Key="EventItemTemplate">
+            <Grid Margin="0,6,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Fill="Gray" Height="50" Width="50" Grid.Row="0" Grid.Column="0"  
+                         VerticalAlignment="Top" Margin="0,7,7,0" 
+                       Grid.RowSpan="3">
+
+                </Rectangle>
+                <Image Height="50" Width="50" Grid.Row="0" Grid.Column="0"  
+                         VerticalAlignment="Top" Margin="0,7,7,0" 
+                       Grid.RowSpan="3">
+                    <Image.Source>
+                        <BitmapImage UriSource="Assets\11.jpg" 
+                                     CreateOptions="BackgroundCreation"/>
+                    </Image.Source>
+                </Image>
+                <TextBlock Text="{Binding Name}" Grid.Row="0" Grid.Column="1" 
+                                 Foreground="{StaticResource PhoneAccentBrush}" VerticalAlignment="Top"/>
+
+                <TextBlock Text="{Binding Date}" TextWrapping="Wrap" 
+                               Grid.Row="1" Grid.Column="1" 
+                               VerticalAlignment="Top" 
+                               />
+                <TextBlock Text="{Binding AddDetails}" TextWrapping="Wrap" 
+                               Grid.Row="2" Grid.Column="1" 
+                               VerticalAlignment="Top" 
+                               />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="EventGroupHeaderTemplate">
+            <Border Background="Transparent" Padding="5">
+                <Border Background="{StaticResource PhoneAccentBrush}" BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="2" Width="62" 
+         Height="62" Margin="0,0,18,0" HorizontalAlignment="Left">
+                    <TextBlock Text="{Binding Key}" Foreground="{StaticResource PhoneForegroundBrush}" FontSize="48" Padding="6" 
+            FontFamily="{StaticResource PhoneFontFamilySemiLight}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Border>
+            </Border>
+        </DataTemplate>
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <phone:Pivot Title="All Sport Savvy" Loaded="Pivot_Loaded">
+            <!--Pivot item one-->
+            <phone:PivotItem Header="Day View">
+                <Grid>
+                    <phone:LongListSelector x:Name="llsDayView"
+                    JumpListStyle="{StaticResource AddrBookJumpListStyle}"
+                    Background="Transparent"
+                    GroupHeaderTemplate="{StaticResource EventGroupHeaderTemplate}"
+                    ItemTemplate="{StaticResource EventItemTemplate}"
+                    LayoutMode="List"
+                    IsGroupingEnabled="true"
+                    HideEmptyGroups ="true">
+                    </phone:LongListSelector>
+                    </Grid>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+            <phone:PivotItem Header="Weekly View">
+                <Grid>
+                    <phone:LongListSelector>
+
+                    </phone:LongListSelector>
+                </Grid>
+            </phone:PivotItem>
+            <phone:PivotItem Header="Monthly View">
+                <Grid>
+                    <phone:LongListSelector>
+
+                    </phone:LongListSelector>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+    
+</phone:PhoneApplicationPage>
